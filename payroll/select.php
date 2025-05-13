@@ -10,26 +10,26 @@
      <table border="2">
           <tr>
                <th>Employee id</th>
-               <th>First Name</th>
-               <th>Last Name</th>
-               <th>Position</th>
-               <th>Salary</th>
-               <th>Hire Date</th>
+               <th>Month</th>
+               <th>Base Salary</th>
+               <th>Deductions</th>
+               <th>NetSalary</th>
+               
                <th colspan="2">Operations</th>
           </tr>
           <?php
           include('conn.php');
 
-          $select=mysqli_query($conn,"SELECT * FROM employees");
+          $select=mysqli_query($conn,"SELECT * FROM payroll");
           while($row=mysqli_fetch_array($select)){
           ?>
           <tr>
                <td><?php echo $row['e_id']?></td>
-               <td><?php echo $row['f_name']?></td>
-               <td><?php echo $row['l_name']?></td>
-               <td><?php echo $row['position']?></td>
-               <td><?php echo $row['salary']?></td>
-               <td><?php echo $row['hiredate']?></td>
+               <td><?php echo $row['month']?></td>
+               <td><?php echo $row['B_Salary']?></td>
+               <td><?php echo $row['Deductions']?></td>
+               <td><?php echo $row['NetSalary']?></td>
+            
                <td><a href="update.php?e_id=<?php echo $row['e_id']?>">Edit</a></td>
                <td><a href="delete.php?e_id=<?php echo $row['e_id']?>">Delete</a></td>
           </tr>
@@ -37,5 +37,10 @@
           }
           ?>
      </table>
+
+
+
+
+
 </body>
 </html>
