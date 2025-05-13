@@ -2,9 +2,17 @@
 
 
 
-**Author Iraguha Jean Aime**  ---------------
+**Author Iraguha Jean Aime** 
 ----------------------
 
+## Technologies used
+
+**PHP BASED**
+**HTML**
+**CSS**
+**JS**
+## Styling tech
+**Bootstrap 5**
 
 
 
