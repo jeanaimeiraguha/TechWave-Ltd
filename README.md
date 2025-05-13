@@ -2,7 +2,7 @@
 
 
 
-**  Author Iraguha Jean Aime **  ---------------
+**Author Iraguha Jean Aime**  ---------------
 ----------------------
 
 
