@@ -11,9 +11,9 @@
 **HTML**
 **CSS**
 **JS**
+**MYSQL**
 ## Styling tech
 **Bootstrap 5**
 
 
-
-............Company based Project 2025---------
+@Company based Project 2025---------
