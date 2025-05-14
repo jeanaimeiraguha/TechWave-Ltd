@@ -6,15 +6,11 @@
     <title>Tech Wave</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <style>
-
-
-*{
-    font-family: "poppins";
-    padding: 0;
-/* margin: 15px auto; */
-
-}
-
+        * {
+            font-family: "Poppins";
+            padding: 0;
+            /* margin: 15px auto; */
+        }
 
         body {
             background-image: url('https://i.pinimg.com/originals/c6/ad/2e/c6ad2ec1fbc13a378d668b5c58a427ed.gif');
@@ -43,7 +39,6 @@
         .welcome-text {
             margin-top: 200px;
             text-align: center;
-           
             padding: 40px;
             border-radius: 15px;
             color: #fff;
@@ -61,7 +56,7 @@ if (isset($_POST['name'])) {
 
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container-fluid">
-        <a class="navbar-brand " >Tech Wave</a>
+        <a class="navbar-brand">Tech Wave</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -93,14 +88,21 @@ if (isset($_POST['name'])) {
     </div>
 </nav>
 
-
-<div class="container welcome-text  fw-bold">
-    <h2>Welcome, <?php echo $_SESSION['name']; ?> to Tech Wave!</h2>
-    <p class="text-center " style="font-size: 17px;">Explorer The Greatest Moment Here</p>
+<div class="container welcome-text fw-bold">
+    <h2>Welcome, <?php 
+    if (isset($_SESSION['name'])) {
+        echo $_SESSION['name']; 
+    } else {
+        echo "Login to continue or please register to access full features";
+    }
+    ?> to Tech Wave!</h2>
+    <p class="text-center" style="font-size: 17px;">Explorer The Greatest Moment Here</p>
 </div>
 
-<footer  style="margin-top: 274px;" class="text-center bg-dark p-2">
+<footer style="margin-top: 274px;" class="text-center bg-dark p-2">
     &copy; 2025  Programmed By Jean Aime IRAGUHA
+</footer>
+
 <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
