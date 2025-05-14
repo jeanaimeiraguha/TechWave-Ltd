@@ -18,7 +18,7 @@
                     <th>Id</th>
                     <th>Username</th>
                     <th>Password</th>
-                    <th colspan="2">Operations</th>
+                    <!-- <th colspan="2">Operations</th> -->
                 </tr>
             </thead>
             <tbody>
@@ -31,8 +31,8 @@
                         <td><?php echo $row['id']; ?></td>
                         <td><?php echo $row['name']; ?></td>
                         <td><?php echo $row['password']; ?></td>
-                        <td><a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-warning btn-sm">Edit</a></td>
-                        <td><a href="delete.php?id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm">Delete</a></td>
+                        <!-- <td><a href="update.php?id=<?php echo $row['id']; ?>" class="btn btn-warning btn-sm">Edit</a></td> -->
+                        <!-- <td><a href="delete.php?id=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm">Delete</a></td> -->
                     </tr>
                 <?php
                 }

@@ -13,7 +13,7 @@
         }
 
         body {
-            background-image: url('https://i.pinimg.com/originals/c6/ad/2e/c6ad2ec1fbc13a378d668b5c58a427ed.gif');
+            background-image: url('https://arabinfotechllc.com/img/timeAttendance.gif');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -98,7 +98,7 @@ if (isset($_POST['name'])) {
     ?> to Tech Wave!</h2>
     <p class="text-center" style="font-size: 17px;">Explorer The Greatest Moment Here</p>
 </div>
-
+<!-- <h2><button class="btn btn-info text-center" style="margin-right:45px">Read More</button></h2> -->
 <footer style="margin-top: 274px;" class="text-center bg-dark p-2">
     &copy; 2025  Programmed By Jean Aime IRAGUHA
 </footer>
