@@ -84,8 +84,8 @@ mysqli_close($conn);
             <input type="text" name="month" id="month" class="form-control">
         </div>
 
-        <button type="submit" name="generate_salary_slip" class="btn btn-primary w-100 mb-2">Generate Salary Slip</button>
-        <button type="submit" name="generate_performance_report" class="btn btn-secondary w-100">Generate Performance Report</button>
+        <button type="submit" name="generate_salary_slip" class="btn btn-primary w-5 mb-2">Generate Salary Slip</button>
+        <button type="submit" name="generate_performance_report" class="btn btn-secondary w-5">Generate Performance Report</button>
     </form>
 </div>
 

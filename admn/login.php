@@ -6,19 +6,18 @@ if (isset($_POST['add'])) {
     $name = $_POST['name'];
     $password = $_POST['password'];
 
-    // Checking credentials against the database
     $select = mysqli_query($conn, "SELECT * FROM admin WHERE `name`='$name' AND `password`='$password'");
     $count = mysqli_num_rows($select);
     
     if ($count >= 1) {
-        // Setting session variables
+        
         $_SESSION['name'] = $name;
         $_SESSION['password'] = $password;
-        // Redirecting to home.php
+       
         header('Location: home.php');
         exit();
     } else {
-        // Alert if credentials are wrong
+       
         echo "<script>alert('Wrong credentials');</script>";
     }
 }
@@ -30,7 +29,7 @@ if (isset($_POST['add'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Login</title>
-    <!-- Bootstrap CSS -->
+   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>

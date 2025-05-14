@@ -15,6 +15,7 @@
         <table class="table table-striped table-bordered table-sm">
             <thead class="thead-dark">
                 <tr>
+
                     <th>Id</th>
                     <th>Username</th>
                     <th>Password</th>
@@ -23,6 +24,7 @@
             </thead>
             <tbody>
                 <?php
+
                 include('conn.php');
                 $select = mysqli_query($conn, "SELECT * FROM admin");
                 while($row = mysqli_fetch_array($select)){

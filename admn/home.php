@@ -22,7 +22,7 @@
         }
         .navbar {
             background-color: rgba(0, 0, 0, 0.8) !important;
-            border-bottom: 2px solid #007bff;
+            /* border-bottom: 2px solid #007bff; */
         }
         .navbar-brand {
             font-weight: bold;
@@ -54,7 +54,7 @@ if (isset($_POST['name'])) {
 }
 ?>
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-primary fixed-top">
     <div class="container-fluid">
         <a class="navbar-brand">Tech Wave</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,7 +89,7 @@ if (isset($_POST['name'])) {
 </nav>
 
 <div class="container welcome-text fw-bold">
-    <h2>Welcome, <?php 
+    <h2 class="" style="font-size: 44px;">Welcome, <?php 
     if (isset($_SESSION['name'])) {
         echo $_SESSION['name']; 
     } else {
@@ -100,7 +100,8 @@ if (isset($_POST['name'])) {
 </div>
 <!-- <h2><button class="btn btn-info text-center" style="margin-right:45px">Read More</button></h2> -->
 <footer style="margin-top: 274px;" class="text-center bg-dark p-2">
-    &copy; 2025  Programmed By Jean Aime IRAGUHA
+    &copy; 2025  Programmed:
+    By Jean Aime IRAGUHA
 </footer>
 
 <script src="js/bootstrap.bundle.min.js"></script>
