@@ -21,7 +21,7 @@
           include('conn.php');
 
           $select=mysqli_query($conn,"SELECT * FROM payroll");
-          while($row=mysqli_fetch_array($select)){
+          while($row=mysqli_fetch_assoc($select)){
           ?>
           <tr>
                <td><?php echo $row['e_id']?></td>
